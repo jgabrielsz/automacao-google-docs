@@ -3,6 +3,7 @@ import pyautogui as pg
 import sys
 
 MATERIAS = [
+    'Outra',
     'Português',
     'Química',
     'Filosofia',
@@ -17,8 +18,7 @@ MATERIAS = [
     'Otimização de uma Estação de Trabalho',
     'História',
     'Sociologia',
-    'Inglês',
-    'Outra'
+    'Inglês'
 ]
 
 class Gui_pg:
