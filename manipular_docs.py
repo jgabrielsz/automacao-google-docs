@@ -42,7 +42,6 @@ class ManipularDocs:
         mt.tornar_titulo(1)
         mt.alinhar_texto_centro()
         mt.negrito()
-        mt.tamanho_fonte(18)
         mt.hotkey('ctrl', 'end')
         pg.press('enter')
     

@@ -29,7 +29,7 @@ def tamanho_fonte(tamanho):
 
 def renomear():
     hotkey('alt', '/')
-    escrever('renomear')
+    escrever('Renomear')
     press('enter')
     press('enter')
 
