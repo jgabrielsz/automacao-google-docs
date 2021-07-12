@@ -41,7 +41,7 @@ class Gui_pg:
         return materia
     
     def mostrar_fim_do_programa(self):
-        text = 'Script de automação finalizado\nO link do docs está na sua área de transferência.'
+        text = 'Script de automação finalizado'
         return pg.alert(text, self.nome_programa, 'OK')
 
 

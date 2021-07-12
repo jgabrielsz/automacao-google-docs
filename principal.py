@@ -20,7 +20,7 @@ class Automação:
 
     def escolher_materia_por_GUI(self):
         materia =  self.interação_gui.escolher_materia()
-        if materia is None or materia: # Passar somente se materia =! None
+        if materia is None or materia: # retornar somente se materia =! None
             return materia
         sys.exit()
 
