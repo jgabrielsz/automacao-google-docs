@@ -18,9 +18,13 @@ tornar_texto_normal = lambda: hotkey('ctrl', 'alt', '0')
 tornar_titulo = lambda x: hotkey('ctrl', 'alt', f'{x}')
 alinhar_texto_esquerda = lambda: hotkey('ctrl', 'shift', 'l')
 alinhar_texto_direita = lambda: hotkey('ctrl', 'shift', 'r')
-alinhar_texto_centro = lambda: hotkey('ctrl', 'shift', 'e')
 menu_arquivo = lambda: hotkey('alt', 'shift', 'f')
 selecionar_acima = lambda: hotkey('ctrl', 'shift', 'home')
+
+def alinhar_texto_centro():
+    hotkey('alt', '/')
+    escrever('centro')
+    press('enter')
 
 def tamanho_fonte(tamanho):
     hotkey('alt', '/')
