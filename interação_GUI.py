@@ -2,7 +2,7 @@
 import pyautogui as pg
 import sys
 
-MATERIAS = [
+SUBJECTS = [
     'Outra',
     'Português',
     'Química',
@@ -23,27 +23,24 @@ MATERIAS = [
 
 class Gui_pg:
     def __init__(self):
-        self.materias = MATERIAS
-        self.nome_programa = 'Automação gdocs'
+        self.subjects = SUBJECTS
+        self.program_name = 'Automação gdocs'
               
     def usuario_permitir_iniciar(self):
-        resposta_do_usuario = pg.confirm('Iniciar script de automação?', self.nome_programa, ['Ok', 'Cancelar'])                                 
+        resposta_do_usuario = pg.confirm('Iniciar script de automação?', self.program_name, ['Ok', 'Cancelar'])                                 
         if resposta_do_usuario == 'Ok':
             return True
         return False
     
     def escolher_materia(self):
-        materia = pg.confirm('Escolha a matéria do documento', self.nome_programa, self.materias)
+        materia = pg.confirm('Escolha a matéria do documento', self.program_name, self.subjects)
         if materia == 'Outra':
-            materia = pg.prompt('Digite a matéria específica: ', self.nome_programa) 
+            materia = pg.prompt('Digite a matéria específica: ', self.program_name) 
         if materia is None:
             return False
         return materia
     
     def mostrar_fim_do_programa(self):
         text = 'Script de automação finalizado'
-        return pg.alert(text, self.nome_programa, 'OK')
-
-
-
-#pg.password(text='sua senha', title='password', default='senha', mask='*')
+        return pg.alert(text, self.program_name, 'OK')
+        
