@@ -1,3 +1,4 @@
+from time import time
 from pyautogui import hotkey, write, press
 from pyperclip import copy
 from datetime import datetime
@@ -20,10 +21,14 @@ alinhar_texto_esquerda = lambda: hotkey('ctrl', 'shift', 'l')
 alinhar_texto_direita = lambda: hotkey('ctrl', 'shift', 'r')
 menu_arquivo = lambda: hotkey('alt', 'shift', 'f')
 selecionar_acima = lambda: hotkey('ctrl', 'shift', 'home')
+selecionar_tudo = lambda: hotkey('Ctrl', 'A')
 
 def alinhar_texto_centro():
-    hotkey('alt', '/')
+    '''hotkey('alt', '/')
     escrever('centro')
+    '''
+    hotkey('ctrl', 'shift', 'e')
+    press('end')
     press('enter')
 
 def tamanho_fonte(tamanho):

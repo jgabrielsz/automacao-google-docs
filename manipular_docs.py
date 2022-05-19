@@ -38,7 +38,7 @@ class ManipularDocs:
     
     def escrever_titulo(self):
         mt.escrever(f'Atividade de {self.materia}')
-        mt.selecionar_acima()
+        mt.selecionar_tudo()
         mt.tornar_titulo(1)
         mt.alinhar_texto_centro()
         mt.negrito()
