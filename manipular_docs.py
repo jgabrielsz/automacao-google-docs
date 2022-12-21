@@ -4,31 +4,11 @@ from time import sleep
 
 
 MATERIAS_PROFESSORES = {
-            'História': 'Felipe Fladson',
-            'Biologia': 'Bisneto Maia',
-            'Português': 'Gegardenia Santos',
-            'Restabelecimento de uma Estação de Trabalho': 'Otávio Leopoldino Machado',
-            'Otimização de uma Estação de Trabalho': 'Otávio Leopoldino Machado',
-            'Assistência Informática': 'Otávio Leopoldino Machado',
-            'Espanhol': 'Paulo Ricardo Monteiro',
-            'Inglês': 'Priscila Lima',
-            'Matemática': 'Rafael Silva Castro',
-            'Química': 'Silvério Ferreira',
-            'Geografia': 'Yris',
-            'Educação Física': 'Umelber Henrique',
-            'Física': 'Vanderlânia Felicio',
-            'Filosofia': 'Otacílio',
-            'Sociologia': 'Otacílio'
+            'Materia': 'Professor'
         }
 
 PROFESSORES_M = [
-            'Otávio Leopoldino Machado',
-            'Bisneto Maia',
-            'Paulo Ricardo Monteiro',
-            'Rafael Silva Castro',
-            'Silvério Ferreira',
-            'Umelber Henrique',
-            'Otacílio'
+            'Nome do professor'
         ]
 
 class ManipularDocs:
